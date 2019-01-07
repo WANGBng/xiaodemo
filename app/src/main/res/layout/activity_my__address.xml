@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.my.activity.myactivity.My_AddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的收货地址"
+            android:layout_centerHorizontal="true"
+            style="@style/my_page_address_font16"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            style="@style/my_page_address_font12"
+            />
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_address"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:background="@drawable/allyuan"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/li1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/addressyuan"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/address_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="李小二"
+                        style="@style/my_page_address_font14" />
+
+                    <TextView
+                        android:id="@+id/my_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="15030621406"
+                        style="@style/my_page_address_font12" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/my_page_address_lay"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/up_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:text="广东省 深圳市 福田区 皇岗街道办事处 皇岗商务中心55楼"
+                        style="@style/my_page_address_font14" />
+
+                    <View
+                        android:layout_width="@dimen/dp_270"
+                        android:layout_height="@dimen/dp_2"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="#f2f2f2" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/default_selection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置默认地址"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_12" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <Button
+                            android:id="@+id/update_user_data"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_30"
+                            android:text="修改"
+                            android:textSize="@dimen/sp_10" />
+
+                        <Button
+                            android:id="@+id/delete_user_data"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_30"
+                            android:text="删除"
+                            android:textSize="@dimen/sp_10" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/li2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/li1"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/addressyuan"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="李小二"
+                        style="@style/my_page_address_font14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="15030621406"
+                        style="@style/my_page_address_font12" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/my_page_address_lay"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:text="广东省 深圳市 福田区 皇岗街道办事处 皇岗商务中心55楼"
+                        style="@style/my_page_address_font14" />
+
+                    <View
+                        android:layout_width="@dimen/dp_270"
+                        android:layout_height="@dimen/dp_2"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="#f2f2f2" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置默认地址"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_12" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <Button
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_30"
+                            android:text="修改"
+                            android:textSize="@dimen/sp_10" />
+
+                        <Button
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_30"
+                            android:text="删除"
+                            android:textSize="@dimen/sp_10" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="@dimen/dp_126"
+                android:layout_height="@dimen/dp_35"
+                android:text="新增收货地址"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">  </ScrollView>
+-->
+
+</LinearLayout>
